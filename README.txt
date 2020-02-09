@@ -1,4 +1,4 @@
-=== microslider ===
+=== microSlider ===
 Contributors: johnnynt
 Donate link: https://dzoni.net/
 Tags: slider, simple
@@ -12,7 +12,7 @@ Just a simple slider plugin.
 
 == Description ==
 
-This is a simple slider plugin that you can use to add a single slider to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place [microslider] and it's ready to go!
+This is a simple WordPress slider plugin that you can use to add a single image slider to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place [microslider] and it's ready to go!
 
 == Installation ==
 
