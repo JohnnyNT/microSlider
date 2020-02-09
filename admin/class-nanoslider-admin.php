@@ -52,14 +52,13 @@ class Nanoslider_Admin {
 			
 		}
 		$nanoSlider_options = get_option('nanoSlider_options');
-	
-		require_once 'nanoslider-admin-display.php';
+		require_once 'partials/nanoslider-admin-display.php';
 	}
 	
 	
 	public function nanoslider_admin_menu()
 	{
-		$nanoslider_admin_menu = add_options_page('nanoSlider Options', 'nanoslider', 'manage_options', 'nanoslider', 'nanoslider_options');
+		$nanoslider_admin_menu = add_options_page('nanoSlider', 'nanoSlider Settings', 'manage_options', 'nanoslider', array($this, 'nanoSlider_options'));
 	}
 	
 

@@ -6,10 +6,9 @@
 class Nanoslider {
 
 	protected $loader;
-
 	protected $plugin_name;
-
 	protected $version;
+	protected $options;
 
 
 	public function __construct() {
@@ -19,6 +18,7 @@ class Nanoslider {
 			$this->version = '1.0.0';
 		}
 		$this->plugin_name = 'nanoslider';
+		$this->options = get_option('nanoSlider_options');
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -68,17 +68,17 @@ class Nanoslider {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		$this->loader->add_action( 'admin_menu', $plugin_admin->nanoslider_admin_menu);
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'nanoslider_admin_menu');
 
 	}
 
 	private function define_public_hooks() {
 
-		$plugin_public = new Nanoslider_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Nanoslider_Public( $this->get_plugin_name(), $this->get_version(), $this->get_options() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
+		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
 	}
 
 
@@ -98,4 +98,7 @@ class Nanoslider {
 		return $this->version;
 	}
 
+	public function get_options() {
+		return $this->options;
+	}
 }
