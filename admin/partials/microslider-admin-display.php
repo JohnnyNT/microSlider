@@ -1,9 +1,9 @@
 <?php if ( ! defined( 'ABSPATH' ) ) die('No permissions to access this page!'); ?>
 <div class="wrap">
 
-	<h2><?php _e('microslider Settings', 'microslider'); ?></h2>
+	<h2><?php _e('microSlider Settings', 'microslider'); ?></h2>
 	<?php echo !$alert ? '' : '<div id="setting-error-settings_updated" class="updated settings-error"><p><strong>'. $alert .'</strong></p></div>'; ?>
-	<p><?php _e('This is where you can configure microslider plugin. Use <strong>[microslider]</strong> shortcode to display the slider.', 'microslider'); ?>.</p>
+	<p><?php _e('This is where you can configure microslider plugin. Use <strong>[microslider]</strong> shortcode to display the slider', 'microslider'); ?>.</p>
 	
 	<form action="" method="POST" class="microslider_settings">
 		<?php wp_nonce_field('microslider-admin-nonce'); ?>

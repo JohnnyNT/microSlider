@@ -58,7 +58,7 @@ class Microslider_Admin {
 	
 	public function microslider_admin_menu()
 	{
-		$microslider_admin_menu = add_options_page('microslider', 'microslider Settings', 'manage_options', 'microslider', array($this, 'microslider_options'));
+		$microslider_admin_menu = add_options_page('microSlider Settings', 'microSlider', 'manage_options', 'microslider', array($this, 'microslider_options'));
 	}
 	
 
