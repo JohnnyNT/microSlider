@@ -17,8 +17,8 @@ class Nanoslider {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'nanoslider';
-		$this->options = get_option('nanoSlider_options');
+		$this->plugin_name = 'microslider';
+		$this->options = get_option('microslider_options');
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -32,24 +32,24 @@ class Nanoslider {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-nanoslider-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-microslider-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-nanoslider-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-microslider-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-nanoslider-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-microslider-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-nanoslider-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-microslider-public.php';
 
 		$this->loader = new Nanoslider_Loader();
 
@@ -68,7 +68,7 @@ class Nanoslider {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'nanoslider_admin_menu');
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'microslider_admin_menu');
 
 	}
 

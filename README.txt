@@ -1,4 +1,4 @@
-=== nanoSlider ===
+=== microslider ===
 Contributors: johnnynt
 Donate link: https://dzoni.net/
 Tags: slider, simple
@@ -12,19 +12,19 @@ Just a simple slider plugin.
 
 == Description ==
 
-This is a simple slider plugin that you can use to add a single slider to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place [nanoslider] and it's ready to go!
+This is a simple slider plugin that you can use to add a single slider to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place [microslider] and it's ready to go!
 
 == Installation ==
 
-1. Upload `nanoslider` plugin folder to the `/wp-content/plugins/` directory
+1. Upload `microslider` plugin folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place [nanoslider] shortcode wherever you want to display the slider
+1. Place [microslider] shortcode wherever you want to display the slider
 
 == Frequently Asked Questions ==
 
 = Where to change/remove images? =
 
-Settings -> nanoSlider
+Settings -> microslider
 
 
 == Screenshots ==
