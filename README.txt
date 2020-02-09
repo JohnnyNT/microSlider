@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== nanoSlider ===
 Contributors: johnnynt
 Donate link: https://dzoni.net/
 Tags: slider, simple
