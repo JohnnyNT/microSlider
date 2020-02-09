@@ -3,7 +3,7 @@
  * The core plugin class.
  */
 
-class Nanoslider {
+class Microslider {
 
 	protected $loader;
 	protected $plugin_name;
@@ -12,8 +12,8 @@ class Nanoslider {
 
 
 	public function __construct() {
-		if ( defined( 'NANOSLIDER_VERSION' ) ) {
-			$this->version = NANOSLIDER_VERSION;
+		if ( defined( 'MICROSLIDER_VERSION' ) ) {
+			$this->version = MICROSLIDER_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
@@ -51,20 +51,20 @@ class Nanoslider {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-microslider-public.php';
 
-		$this->loader = new Nanoslider_Loader();
+		$this->loader = new Microslider_Loader();
 
 	}
 
 	private function set_locale() {
 
-		$plugin_i18n = new Nanoslider_i18n();
+		$plugin_i18n = new Microslider_i18n();
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Nanoslider_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Microslider_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -74,7 +74,7 @@ class Nanoslider {
 
 	private function define_public_hooks() {
 
-		$plugin_public = new Nanoslider_Public( $this->get_plugin_name(), $this->get_version(), $this->get_options() );
+		$plugin_public = new Microslider_Public( $this->get_plugin_name(), $this->get_version(), $this->get_options() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );

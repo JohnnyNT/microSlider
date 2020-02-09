@@ -4,7 +4,7 @@
  * Register all actions and filters for the plugin
  *
  */
-class Nanoslider_Loader {
+class Microslider_Loader {
 
 
 	protected $actions;

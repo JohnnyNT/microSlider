@@ -1,6 +1,6 @@
 <?php
 
-class Nanoslider_Activator {
+class Microslider_Activator {
 	
 	public static function activate() {
 

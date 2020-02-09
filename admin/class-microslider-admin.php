@@ -3,7 +3,7 @@
 /**
  * The admin-specific functionality of the plugin.
  */
-class Nanoslider_Admin {
+class Microslider_Admin {
 
 	private $plugin_name;
 	private $version;

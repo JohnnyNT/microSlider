@@ -1,5 +1,5 @@
 <?php
-class Nanoslider_i18n {
+class Microslider_i18n {
 
 	public function load_plugin_textdomain() {
 

@@ -1,6 +1,6 @@
 <?php
 
-class Nanoslider_Deactivator {
+class Microslider_Deactivator {
 
 	public static function deactivate() {
 

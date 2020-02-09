@@ -4,7 +4,7 @@
  * The public-facing functionality of the plugin.
  */
 
-class Nanoslider_Public {
+class Microslider_Public {
 
 	private $plugin_name;
 	private $version;

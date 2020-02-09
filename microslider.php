@@ -3,9 +3,9 @@
 /**
  * @link              https://dzoni.net/
  * @since             1.0.0
- * @package           Nanoslider
+ * @package           microslider
  *
- * Plugin Name:       microslider
+ * Plugin Name:       microSlider
  * Plugin URI:        https://dzoni.net/microslider
  * Description:       Simple slider for your WP website.
  * Version:           1.0.0
@@ -22,16 +22,16 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'NANOSLIDER_VERSION', '1.0.0' );
+define( 'MICROSLIDER_VERSION', '1.0.0' );
 
 function activate_microslider() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-microslider-activator.php';
-	Nanoslider_Activator::activate();
+	Microslider_Activator::activate();
 }
 
 function deactivate_microslider() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-microslider-deactivator.php';
-	Nanoslider_Deactivator::deactivate();
+	Microslider_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_microslider' );
@@ -46,7 +46,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-microslider.php';
 
 function run_microslider() {
 
-	$plugin = new Nanoslider();
+	$plugin = new Microslider();
 	$plugin->run();
 
 }
