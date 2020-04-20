@@ -1,17 +1,44 @@
-/*.form-table{display:none;}*/
-.slimage{width:400px;height:110px;background:#E1E1E1;border:2px solid #BBBBBB;display:inline-block;margin:5px;vertical-align:middle;position:relative;}
-.sli_close{position:absolute;bottom:10px;right:10px;display:none;cursor:pointer;}
+/* Basic layout*/
 
-.settings_open{
-	float:left;
-	padding-right:10px;
+.microslider_right{
+	width:83%;
+	float:right;
+	padding:0 1%;
+	background-color:#CACBCC;
 }
 
-.radio-toolbar input[type="radio"] {
+.microslider_right .page-title-action{
+	top:0;
+}
+
+.microslider_left{
+	width:15%;
+	float:left;
+	text-align: center;
+}
+
+.microslider_left a{
+	padding:10px 0;
+	width: 100%;
+	text-decoration: none;
+	border-bottom:1px solid #F1F1F1;
+	color:#ffffff;
+	background-color: #32373C;
+	display: inline-block;
+}
+
+.microslider_left a.msactive{
+	color:#000000;
+	background-color:#CACBCC;
+}
+
+/* General */
+
+.microslider_right .radio-toolbar input[type="radio"] {
     display:none;
 }
 
-.radio-toolbar label {
+.microslider_right .radio-toolbar label {
     display:inline-block;
 	width:30px;
 	height:30px;
@@ -22,10 +49,71 @@
 	border: 3px solid transparent;
 }
 
-.radio-toolbar input[type="radio"]:checked + label {
+.microslider_right .radio-toolbar input[type="radio"]:checked + label {
     border: 3px solid #9F9F9F;
 	font-weight:bold;
 	width:35px;
 	height:35px;
 	color:#FFFFFF;
+}
+
+/* Settings panel */
+
+.microslider_add_new{
+	margin-top:10px !important;
+}
+
+.microslider_add_new_button{
+	width: 50% !important;
+	margin-top:10px !important;
+}
+
+.microslider_delete{
+	background-color: #C80000 !important;
+	border-color: #920000 !important;
+	float:right;
+}
+
+.microslider_add_new{
+	display: none;
+}
+
+.microslider_shortcode_field{
+	min-width:450px;
+	width:auto;
+	color:#000000 !important;
+	text-align: center;
+}
+
+/* Image upload section */
+
+.microslider_upload{
+	width:23%;
+	height:auto;
+	background:#E1E1E1;
+	border:2px solid #BBBBBB;
+	display:inline-block;
+	position: relative;
+	margin:5px;
+	vertical-align:middle;
+	position:relative;
+}
+
+.microslider_upload_image{
+	max-width:98%;
+	vertical-align:middle;
+	margin: 1%;
+}
+
+.microslider_image_close{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	display:none;
+	cursor:pointer;
+}
+
+.microslider_left .settings_open{
+	float:left;
+	padding-right:10px;
 }

@@ -1,3 +1,76 @@
-.nano-slider .bx-viewport ul li{
-    margin: 0px;
+.flickity-enabled.is-fullscreen {
+  z-index: 100000 !important;
 }
+.flickity-fullscreen-button{
+  padding:3px !important;
+}
+.flickity-enabled.is-fullscreen{
+  min-width: 100%;
+}
+
+/* Single slide widths */
+
+.microslider_single_100{
+  width: 100%;
+}
+
+.microslider_single_75{
+  width: 75%;
+}
+
+.microslider_single_50{
+  width: 50%;
+}
+
+.microslider_single_45{
+  width: 45%;
+}
+
+.microslider_single_40{
+  width: 40%;
+}
+
+.microslider_single_30{
+  width: 30%;
+}
+
+.microslider_single_35{
+  width: 30%;
+}
+
+.microslider_single_33{
+  width: 33%;
+}
+
+.microslider_single_25{
+  width: 25%;
+}
+
+.microslider_single_20{
+  width: 20%;
+}
+
+.microslider_single_15{
+  width: 15%;
+}
+
+.microslider_single_10{
+  width: 10%;
+}
+
+
+
+.carousel-image {
+  display: block;
+  min-width: 150px;
+  max-width: 100%;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
+

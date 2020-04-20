@@ -101,4 +101,5 @@ class Microslider {
 	public function get_options() {
 		return $this->options;
 	}
+	
 }
