@@ -32,6 +32,12 @@
 	background-color:#CACBCC;
 }
 
+.microslider_option_left_col, .microslider_option_right_col{
+	width:49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
 /* General */
 
 .microslider_right .radio-toolbar input[type="radio"] {
@@ -116,4 +122,50 @@
 .microslider_left .settings_open{
 	float:left;
 	padding-right:10px;
+}
+
+/* options */
+
+.microslider_option_holder{
+	border-bottom: 1px solid #BBBBBB;
+	padding:2px 0;
+    line-height: 30px;
+}
+.microslider_right .microslider_label{
+	display: inline-block;
+	vertical-align: middle;
+	width:150px;
+}
+.microslider_right .microslider_input_holder{
+	display: inline-block;
+	vertical-align: middle;
+	width:90px;
+}
+
+.microslider_right .microslider_option_holder{
+	position: relative;
+}
+.microslider_right .microslider_tooltip_icon{
+	position: relative;
+	vertical-align: middle;
+}
+.microslider_right .microslider_tooltip{
+	display: none;
+	background:#FFFFFF;
+	max-width: 50%;
+	position: absolute;
+	left: 280px;
+	top:0;
+	line-height: 16px;
+	font-size: 12px;
+	padding:5px;
+	border-radius:7px;
+	z-index: 999;
+}
+
+.microslider_right input[type=text]{
+	width: 80px;
+}
+.microslider_right input{
+	vertical-align: middle;
 }

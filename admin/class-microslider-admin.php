@@ -181,6 +181,13 @@ class Microslider_Admin {
 		else{
 			$active_slider = intval($_GET['microslider_edit']);
 		}
+
+		if(function_exists( 'wp_enqueue_media' )){
+			wp_enqueue_media();
+		}
+	
+		$microslider_options = get_option('microslider_slide_'. $active_slider);
+		$microslider_slider_images = explode(',', $microslider_options['microslider_images']);
 		
 		require_once 'partials/microslider-admin-display.php';
 	}
@@ -250,7 +257,7 @@ class Microslider_Admin {
 
 	/* Check if slider exists */
 
-	private function microslider_check_id($id)
+	public function microslider_check_id($id)
 	{
 		$existing_ids = get_option('microslider_ids');
 		$check = false;

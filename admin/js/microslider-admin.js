@@ -21,9 +21,7 @@
             })
             .on('select', function() {
 				
-                var attachment = custom_uploader.state().get('selection').toJSON();
-                $('.ntsliders').attr('src', attachment.url);
-				
+				var attachment = custom_uploader.state().get('selection').toJSON();
 				
 				var singles = '';
 				var i;
@@ -84,6 +82,14 @@
 			document.execCommand("copy");
 
 		});
+
+		//tooltips
+
+			$(".microslider_tooltip_icon").hover(function () {
+				$(this).closest('.microslider_option_holder').find('.microslider_tooltip').show();
+			}, function () {
+				$(this).closest('.microslider_option_holder').find('.microslider_tooltip').hide();
+			});
 
 	});
 	

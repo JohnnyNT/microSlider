@@ -39,37 +39,46 @@ class Microslider_Public {
 	public function microslider_shortcode($atts, $content = null)
 	{
 		$slider_id = $atts['id'];
-		$options = get_option('microslider_slide_'. $slider_id);
-		
-		$microslider_json = json_encode(
-			array(
-				'imagesLoaded' => true ,
-				'cellAlign' => true,
-				'wrapAround' => true,
-				'autoPlay' => intval($options['microslider_auto']) == 0 ? false : intval($options['microslider_auto']),
-				'fullscreen' => $options['microslider_fullscreen'] == 'yes' ? 'yes' : '',
-				'adaptiveHeight' => $options['microslider_height'] == 'yes' ? 'yes' : '',
-				'pageDots' => $options['microslider_dots'] == 'yes' ? 'yes' : '',
-				'prevNextButtons' => $options['microslider_arrows'] == 'yes' ? 'yes' : '',
-				'groupCells' => intval($options['microslider_group']) == 0 ? false : intval($options['microslider_group']),
-			)
-		);
-		
-		
-		$slider_html  = "<div class=\"carousel\" data-flickity='". esc_attr($microslider_json) ."'>";
-		
-		if(isset($options['microslider_images'])){
-			
-			$microslider_images = explode(',', esc_attr($options['microslider_images']));
-		
-			foreach($microslider_images as $microslider_image){
-				$slider_html .= '<img class="carousel-image '. sanitize_html_class('microslider_single_' . $options['microslider_width']) .'" alt="slider image" src="'. esc_attr($microslider_image) .'" />';
-			}
-		}
 
-		$slider_html .= '</div>';
-		
-		return $slider_html;
+		$new_admin = new Microslider_Admin($this->plugin_name, $this->version);
+
+		if($new_admin->microslider_check_id($slider_id)){
+
+			$options = get_option('microslider_slide_'. $slider_id);
+			
+			$microslider_json = json_encode(
+				array(
+					'imagesLoaded' => true ,
+					'cellAlign' => true,
+					'wrapAround' => true,
+					'autoPlay' => intval($options['microslider_auto']) == 0 ? false : intval($options['microslider_auto']),
+					'fullscreen' => $options['microslider_fullscreen'] == 'yes' ? 'yes' : '',
+					'adaptiveHeight' => $options['microslider_height'] == 'yes' ? 'yes' : '',
+					'pageDots' => $options['microslider_dots'] == 'yes' ? 'yes' : '',
+					'prevNextButtons' => $options['microslider_arrows'] == 'yes' ? 'yes' : '',
+					'groupCells' => intval($options['microslider_group']) == 0 ? false : intval($options['microslider_group']),
+				)
+			);
+			
+			
+			$slider_html  = "<div class=\"carousel\" data-flickity='". esc_attr($microslider_json) ."'>";
+			
+			if(isset($options['microslider_images'])){
+				
+				$microslider_images = explode(',', esc_attr($options['microslider_images']));
+			
+				foreach($microslider_images as $microslider_image){
+					$slider_html .= '<img class="carousel-image '. sanitize_html_class('microslider_single_' . $options['microslider_width']) .'" alt="slider image" src="'. esc_attr($microslider_image) .'" />';
+				}
+			}
+
+			$slider_html .= '</div>';
+			
+			return $slider_html;
+		}
+		else{
+			return 'Slider with ID '. intval($slider_id) .' is not found';
+		}
 	}
 
 	public function register_shortcodes() {
