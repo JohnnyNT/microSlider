@@ -125,7 +125,7 @@
 						</div>
 
 						<span class="dashicons dashicons-info microslider_tooltip_icon"></span>
-						<span class="microslider_tooltip"><?php _e('Make group of 2 or more slides to move together', 'microslider'); ?></span>
+						<span class="microslider_tooltip"><?php _e('Make group of 2 or more slides to move together. Set 0 to show one slide at a time, or 2 and more to show multiple slides grouped', 'microslider'); ?></span>
 					</div>
 					
 					<div class="microslider_option_holder">

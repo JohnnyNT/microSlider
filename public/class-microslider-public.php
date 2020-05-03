@@ -77,7 +77,7 @@ class Microslider_Public {
 			return $slider_html;
 		}
 		else{
-			return 'Slider with ID '. intval($slider_id) .' is not found';
+			return '<div class="microslider_not_found">Slider with ID '. intval($slider_id) .' is not found</div>';
 		}
 	}
 

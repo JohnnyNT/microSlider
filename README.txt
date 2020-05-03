@@ -12,20 +12,19 @@ Just a simple slider plugin.
 
 == Description ==
 
-This is a simple WordPress slider plugin that you can use to add image sliders to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place the shortcode wherever you want and it's ready to go! Based on a JS slider library flickity.
+This is a fast and simple WordPress image slider plugin that you can use to add image sliders to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just create a new sloder, place the shortcode wherever you want and it's ready to go! Based on a JS slider library flickity.
 
 == Installation ==
 
 1. Upload `microslider` plugin folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place the shortcode wherever you want to display the slider
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Place the shortcode wherever you want to display the slider
 
 == Frequently Asked Questions ==
 
 = Where to change/remove images? =
 
 Settings -> microSlider
-
 
 == Screenshots ==
 

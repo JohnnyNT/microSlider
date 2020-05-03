@@ -4,10 +4,11 @@ class Microslider_Activator {
 	
 	public static function activate() {
 
-		$microslider_ids = array(array('slider_id' => 1,'slider_name' => 'First one'),array('slider_id' => 2,'slider_name' => 'Second one'));
+		$microslider_ids = array(array('slider_id' => 1,'slider_name' => 'First one'));
 
 		$microslider_start_slide = array(
-			'microslider_images' => plugins_url( 'admin/images/demo/demo-1.jpg', dirname(__FILE__) ) .','. plugins_url( 'admin/images/demo/demo-2.jpg', dirname(__FILE__) ), 'microslider_auto' => 1500,
+			'microslider_images' => plugins_url( 'admin/images/demo/demo-1.jpg', dirname(__FILE__) ) .','. plugins_url( 'admin/images/demo/demo-2.jpg', dirname(__FILE__) ) .','. plugins_url( 'admin/images/demo/demo-3.jpg', dirname(__FILE__) ), 
+			'microslider_auto' => 1500,
 			'microslider_fullscreen' => 'yes',
 			'microslider_height' => 'yes',
 			'microslider_dots' => 'yes',
