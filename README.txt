@@ -1,14 +1,15 @@
 === microSlider ===
 Contributors: johnnynt
 Donate link: https://dzoni.net/
-Tags: slider, simple
+Tags: slider,image slider,carousel
 Requires at least: 4.0.1
-Tested up to: 5.3.2
-Stable tag: 1.0
+Tested up to: 5.4.1
+Requires PHP: 7.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Just a simple slider plugin.
+This is a fast and simple WordPress image slider plugin that you can use to add image sliders to a website.
 
 == Description ==
 
@@ -27,15 +28,19 @@ This is a fast and simple WordPress image slider plugin that you can use to add 
 Settings -> microSlider
 
 == Screenshots ==
-
 1. Settings page
 
 == Changelog ==
-
 = 1.0 =
 * Initial version
 
-== Upgrade Notice ==
+= 1.0.1 =
+* Updated README
+* Updated plugin icon and banner
 
+== Upgrade Notice ==
 = 1.0 =
 Stable version
+= 1.0.1 =
+* Updated README
+* Updated plugin icon and banner
