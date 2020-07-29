@@ -13,7 +13,7 @@ This is a fast and simple WordPress image slider plugin that you can use to add 
 
 == Description ==
 
-This is a fast and simple WordPress image slider plugin that you can use to add image sliders to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just create a new sloder, place the shortcode wherever you want and it's ready to go! Based on a JS slider library flickity.
+This is a fast and simple WordPress image slider plugin that you can use to add image sliders to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just create a new slider, place the shortcode wherever you want and it's ready to go! Based on a JS slider library flickity.
 
 == Installation ==
 
