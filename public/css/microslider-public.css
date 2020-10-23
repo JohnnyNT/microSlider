@@ -79,3 +79,7 @@
   font-weight: bold;
   text-align: center;
 }
+
+.flickity-prev-next-button{
+	padding:1px 6px;
+}

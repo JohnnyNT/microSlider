@@ -76,6 +76,7 @@ class Microslider_Admin {
 					/* Validate slider options */
 					
 					$microslider_fullscreen = isset($_POST['microslider_fullscreen']) && sanitize_text_field($_POST['microslider_fullscreen']) == 'yes' ? 'yes' : 'no';
+					$microslider_fade = isset($_POST['microslider_fade']) && sanitize_text_field($_POST['microslider_fade']) == 'yes' ? 'yes' : 'no';
 					$microslider_height = isset($_POST['microslider_height']) && sanitize_text_field($_POST['microslider_height']) == 'yes' ? 'yes' : 'no';
 					$microslider_dots = isset($_POST['microslider_dots']) && sanitize_text_field($_POST['microslider_dots']) == 'yes' ? 'yes' : 'no';
 					$microslider_arrows = isset($_POST['microslider_arrows']) && sanitize_text_field($_POST['microslider_arrows']) == 'yes' ? 'yes' : 'no';
@@ -88,6 +89,7 @@ class Microslider_Admin {
 						'microslider_images' => $microslider_images,
 						'microslider_auto' => $microslider_auto, 
 						'microslider_fullscreen' => $microslider_fullscreen, 
+						'microslider_fade' => $microslider_fade, 
 						'microslider_height' => $microslider_height, 
 						'microslider_dots' => $microslider_dots, 
 						'microslider_arrows' => $microslider_arrows, 
@@ -133,6 +135,7 @@ class Microslider_Admin {
 					'microslider_images' => plugins_url( 'admin/images/demo/demo-1.jpg', dirname(__FILE__) ) .','. plugins_url( 'admin/images/demo/demo-2.jpg', dirname(__FILE__) ), 
 					'microslider_auto' => 1500,
 					'microslider_fullscreen' => 'yes',
+					'microslider_fade' => 'yes',
 					'microslider_height' => 'yes',
 					'microslider_dots' => 'yes',
 					'microslider_arrows' => 'yes',

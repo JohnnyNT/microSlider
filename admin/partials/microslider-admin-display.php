@@ -96,6 +96,17 @@
 					</div>
 
 					<div class="microslider_option_holder">
+						<label class="microslider_label"><?php _e('Fade effect', 'microslider'); ?>:</label>
+
+						<div class="microslider_input_holder">
+							<input type="checkbox" name="microslider_fade" value="yes" <?php checked( $microslider_options['microslider_fade'] == 'yes', 1 ); ?>>
+						</div>
+
+						<span class="dashicons dashicons-info microslider_tooltip_icon"></span>
+						<span class="microslider_tooltip"><?php _e('Turn fade transition effect on or off', 'microslider'); ?></span>
+					</div>
+
+					<div class="microslider_option_holder">
 						<label class="microslider_label"><?php _e('Navigation dots', 'microslider'); ?>:</label>
 
 						<div class="microslider_input_holder">

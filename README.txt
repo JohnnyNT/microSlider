@@ -3,17 +3,17 @@ Contributors: johnnynt
 Donate link: https://dzoni.net/
 Tags: slider,image slider,carousel
 Requires at least: 4.0.1
-Tested up to: 5.4.1
+Tested up to: 5.5.1
 Requires PHP: 7.0
-Stable tag: 1.0.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is a fast and simple WordPress image slider plugin that you can use to add image sliders to a website.
+Fast and simple WordPress image slider plugin. You can use it to add multiple image sliders to a website.
 
 == Description ==
 
-This is a fast and simple WordPress image slider plugin that you can use to add image sliders to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just create a new sloder, place the shortcode wherever you want and it's ready to go! Based on a JS slider library flickity.
+Fast and simple WordPress image slider plugin. You can use to add multiple image sliders to your website. It uses minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Due to simplicity, it is very light in terms of resources needed, and database bloat. Just create a new slider, place the shortcode inside post/page and it's ready to go! Based on a JS slider library flickity. Support for this plugin is provided in the wordpress.org support forum, or here: https://support.dzoni.net/
 
 == Installation ==
 
@@ -35,12 +35,17 @@ Settings -> microSlider
 * Initial version
 
 = 1.0.1 =
-* Updated README
 * Updated plugin icon and banner
+
+= 1.0.5 =
+* Added fade transition effect
+* Support forum URL
 
 == Upgrade Notice ==
 = 1.0 =
 Stable version
 = 1.0.1 =
-* Updated README
 * Updated plugin icon and banner
+= 1.0.5 =
+* Added fade transition effect
+* Support forum URL

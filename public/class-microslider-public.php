@@ -24,6 +24,7 @@ class Microslider_Public {
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/microslider-public.css', array(), $this->version, 'all' );
 		wp_enqueue_style( 'microslider_flickity_css', plugin_dir_url( __FILE__ ) . 'css/flickity.min.css', array(), '2.2.1', 'all' );
 		wp_enqueue_style( 'microslider_flickity_fullscreen_css', plugin_dir_url( __FILE__ ) . 'css/fullscreen.css', array(), '1.1.1', 'all' );
+		wp_enqueue_style( 'microslider_flickity_fade_css', plugin_dir_url( __FILE__ ) . 'css/flickity-fade.css', array(), '1.0.0', 'all' );
 	}
 
 	/**
@@ -34,6 +35,7 @@ class Microslider_Public {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/microslider-public.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( 'microslider_flickity_js', plugin_dir_url( __FILE__ ) . 'js/flickity.pkgd.min.js', array( 'jquery' ), '2.2.1', false );
 		wp_enqueue_script( 'microslider_flickity_fullscreen_js', plugin_dir_url( __FILE__ ) . 'js/fullscreen.js', array( 'jquery' ), '1.1.1', false );
+		wp_enqueue_script( 'microslider_flickity_fade_js', plugin_dir_url( __FILE__ ) . 'js/flickity-fade.js', array( 'jquery' ), '1.0.0', false );
 	}
 
 	public function microslider_shortcode($atts, $content = null)
@@ -53,6 +55,7 @@ class Microslider_Public {
 					'wrapAround' => true,
 					'autoPlay' => intval($options['microslider_auto']) == 0 ? false : intval($options['microslider_auto']),
 					'fullscreen' => $options['microslider_fullscreen'] == 'yes' ? 'yes' : '',
+					'fade' => $options['microslider_fade'] == 'yes' ? 'yes' : '',
 					'adaptiveHeight' => $options['microslider_height'] == 'yes' ? 'yes' : '',
 					'pageDots' => $options['microslider_dots'] == 'yes' ? 'yes' : '',
 					'prevNextButtons' => $options['microslider_arrows'] == 'yes' ? 'yes' : '',

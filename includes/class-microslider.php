@@ -15,7 +15,7 @@ class Microslider {
 		if ( defined( 'MICROSLIDER_VERSION' ) ) {
 			$this->version = MICROSLIDER_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '1.0.5';
 		}
 		$this->plugin_name = 'microslider';
 		$this->options = get_option('microslider_options');
