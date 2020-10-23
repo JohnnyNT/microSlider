@@ -1,14 +1,10 @@
 <?php
 
 /**
- * @link              https://dzoni.net/
- * @since             1.0.1
- * @package           microslider
- *
  * Plugin Name:       microSlider
  * Plugin URI:        https://dzoni.net/microslider
  * Description:       This is a simple WordPress slider plugin that you can use to add a single image slider to your website. It use minimal HTML/JS code and a simple markup that can easily be adapted to your website with CSS. Just place [microslider] and it's ready to go!
- * Version:           1.0.1
+ * Version:           1.0.5
  * Author:            Nikola Tomic
  * Author URI:        https://dzoni.net/
  * License:           GPL-2.0+
@@ -22,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'MICROSLIDER_VERSION', '1.0.1' );
+define( 'MICROSLIDER_VERSION', '1.0.5' );
 
 function activate_microslider() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-microslider-activator.php';
