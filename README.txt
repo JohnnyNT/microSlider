@@ -3,9 +3,9 @@ Contributors: johnnynt
 Donate link: https://dzoni.net/
 Tags: slider,image slider,carousel
 Requires at least: 4.0.1
-Tested up to: 5.5.1
+Tested up to: 6.0.0
 Requires PHP: 7.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,10 @@ Settings -> microSlider
 * Added fade transition effect
 * Support forum URL
 
+= 1.0.6 =
+* Updated Flickity library to 2.3.0
+* Fixes in admin area tooltips wording
+
 == Upgrade Notice ==
 = 1.0 =
 Stable version
@@ -49,3 +53,6 @@ Stable version
 = 1.0.5 =
 * Added fade transition effect
 * Support forum URL
+= 1.0.6 =
+* Updated Flickity library to 2.3.0
+* Fixes in admin area tooltips wording
