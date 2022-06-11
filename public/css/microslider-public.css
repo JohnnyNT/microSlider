@@ -65,8 +65,8 @@
   min-width: 150px;
   max-width: 100%;
   /* vertically center */
-  top: 50%;
-  transform: translateY(-50%)
+  /*top: 50%;
+  transform: translateY(-50%); */
 }
 
 .flickity-slider .carousel.is-fullscreen .carousel-image {
@@ -82,4 +82,12 @@
 
 .flickity-prev-next-button{
 	padding:1px 6px;
+}
+.flickity-enabled.is-draggable {
+  margin-bottom: 30px;
+}
+
+.flickity-slider {
+  display: flex;
+  align-items: center;
 }

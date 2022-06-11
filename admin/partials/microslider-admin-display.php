@@ -73,14 +73,14 @@
 					</div>
 					
 					<div class="microslider_option_holder">
-						<label class="microslider_label"><?php _e('Fixed height', 'microslider'); ?>:</label>
+						<label class="microslider_label"><?php _e('Adaptive height', 'microslider'); ?>:</label>
 
 						<div class="microslider_input_holder">
 							<input type="checkbox" name="microslider_height" value="yes" <?php checked( $microslider_options['microslider_height'] == 'yes', 1 ); ?>>
 						</div>
 
 						<span class="dashicons dashicons-info microslider_tooltip_icon"></span>
-						<span class="microslider_tooltip"><?php _e('If checked, slider will adapt to a height of each slide, otherwise height will be fixed to a height of the highest slide', 'microslider'); ?></span>
+						<span class="microslider_tooltip"><?php _e('If checked, slider container height will adapt to a height of each slide, otherwise height of slider container will be fixed to a height of the highest slide', 'microslider'); ?></span>
 					</div>
 
 
